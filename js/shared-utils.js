@@ -16,7 +16,7 @@
     const localCertPattern = /^(?:\.\.\/)*assets\/certificates\//i;
     if (localCertPattern.test(normalizedPath)) {
       const filename = normalizedPath.replace(localCertPattern, '');
-      return `https://raw.githubusercontent.com/designedBySatyam/assets/main/certificates/${filename}`;
+      return `https://raw.githubusercontent.com/bysatyam/assets/main/certificates/${filename}`;
     }
 
     // Other relative paths (../, ./, /) pass through
@@ -27,11 +27,11 @@
     // assets/something (without certificates subfolder) — redirect to CDN
     if (normalizedPath.startsWith('assets/')) {
       const filename = normalizedPath.replace(/^assets\/(?:certificates\/)?/, '');
-      return `https://raw.githubusercontent.com/designedBySatyam/assets/main/certificates/${filename}`;
+      return `https://raw.githubusercontent.com/bysatyam/assets/main/certificates/${filename}`;
     }
 
     // Bare filename fallback
-    return `https://raw.githubusercontent.com/designedBySatyam/assets/main/certificates/${normalizedPath}`;
+    return `https://raw.githubusercontent.com/bysatyam/assets/main/certificates/${normalizedPath}`;
   }
 
   window.PortfolioUtils = Object.assign({}, window.PortfolioUtils, {

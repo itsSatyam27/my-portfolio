@@ -145,7 +145,7 @@ class DownloadTracking {
 class LeetCodeStats {
     constructor() {
         this.grid     = document.getElementById('lcStatsGrid');
-        this.username = 'designedbysatyam';
+        this.username = 'bysatyam';
         this.cacheKey = `lcStats:${this.username}`;
         this.cacheTtl = 1000 * 60 * 60 * 24;
         this.init();
