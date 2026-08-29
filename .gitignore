@@ -1,38 +1,27 @@
-# Secrets / env files
-.env
-.env.*
-*.env
-*.env.*
-
-# Editor settings
-.vscode/
-
-# Keys / certificates
-*.pem
-*.key
-*.p12
-*.pfx
-*.crt
-*.cer
-
-# Service accounts / credentials
-*serviceAccount*.json
-*service-account*.json
-*firebase-adminsdk*.json
-
-# Local databases / backups
-*.sqlite
-*.sqlite3
-*.db
-*.bak
-*.backup
-
-# Archives
-*.zip
-*.tar
-*.tar.gz
-*.tgz
-*.7z
-
-# Logs
+﻿# Logs
+logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Backup folder
+_legacy_multipage_backup/
